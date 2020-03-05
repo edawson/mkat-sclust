@@ -40,8 +40,8 @@ public:
 
 private:
 	/* fix() will not reinsert clusters with weight <= weight_threshold */
-	static const double weight_threshold = 0;
-	static const double accuracy_threshold = 0.0000000001;
+	static constexpr double weight_threshold = 0;
+	static constexpr double accuracy_threshold = 0.0000000001;
 
 	long max_id;
 	multimap<Cluster*,Cluster*,cluscomp> clusters;
